@@ -1,3 +1,4 @@
+let input = "0"
 var sum = 0;
 var steps = input.length / 2
 var rest = 0;
