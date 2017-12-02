@@ -11,10 +11,11 @@ for (var i=0; i<=(numbers.length-1);i++) {
 		container.push(Number(digits[pos]));
 		pos++;
 	}
-
 	let biggest = Math.max(container);
 	let smallest = Math.min(container);
-	checksum+=Number(biggest-smallest);
+	checksum+=(biggest-smallest);
+	container = [];
 }
 
 console.log(checksum);
+
