@@ -4,7 +4,7 @@ var checksum = 0;
 var digits = []
 var container = []
 
-for (var i=0; i<=(input.length-1);i++) {
+for (var i=0; i<=(numbers.length-1);i++) {
 	var digits = numbers[i].split('');
 	var pos = 0;
 	while (pos<digits.length){
