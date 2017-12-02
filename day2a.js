@@ -5,8 +5,8 @@ var digits = []
 
 
 for (var i=0; i<=(numbers.length-1);i++) {
-	digits = numbers[i].split('\t');		// split sequences into digits
-	digits = digits.map(Number);
+	digits = numbers[i].split('\t');		// split rows into numbers
+	digits = digits.map(Number);			// turn the strings into numbers
 	let biggest = Math.max.apply(null, digits);		// looking for the highest integer
 	let smallest = Math.min.apply(null, digits);		// looking for the smalest integer
 	checksum+=(biggest-smallest);			// adding the difference to checksum
