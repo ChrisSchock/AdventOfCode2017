@@ -1,5 +1,5 @@
-let input = "538 74 948";
-let numbers = input.split(' ');				// split input into an array of strings containing sequences
+let input = "538	74	948";
+let numbers = input.split('\t');				// split input into an array of strings containing sequences
 var checksum = 0;
 var digits = []
 
