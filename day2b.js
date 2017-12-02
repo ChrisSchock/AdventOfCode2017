@@ -8,11 +8,9 @@ for (var i=0; i<=(rows.length-1);i++) {
 	numbers = rows[i].split('\t');		// split sequences into digits
 	numbers = numbers.map(Number);
 	for (n=0; n<=(numbers.length-1);n++) {
-		while x<=(numbers.length-1) {
-			if numbers[n] % numbers[n+x] === 0 {
+		for (x=0; x<=(numbers.length-1);x++) {
+			if (numbers[n] % numbers[n+x] === 0) {
 				checksum+=numbers[n];
-			} else {
-				x++;
 			}
 		}
 	}
